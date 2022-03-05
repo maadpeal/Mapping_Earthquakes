@@ -32,13 +32,7 @@ L.control.layers(baseMaps).addTo(map);
 streets.addTo(map);
 
 // Accessing the Toronto neighborhoods GeoJSON URL.
-let torontoHoods = "https://raw.githubusercontent.com/<GitHub_name>/Mapping_Earthquakes/main/torontoNeighborhoods.json";
-
-// // Create a style for the lines.
-// let myStyle = {
-//   color: "#ffffa1",
-//   weight: 2
-// }
+let torontoHoods = "https://raw.githubusercontent.com/maadpeal/Mapping_Earthquakes/main/torontoNeighborhoods.json";
 
 // Grabbing our GeoJSON data.
 d3.json(torontoHoods).then(function(data) {
